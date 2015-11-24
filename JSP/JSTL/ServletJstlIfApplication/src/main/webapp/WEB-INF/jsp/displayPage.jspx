@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+ * @author Adarsh
+ * @author $LastChangedBy: adarsh $
+ * @version $Revision: 1595 $, $Date:: 5/4/12 6:12 PM#$
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          version="2.0">
+
+    <jsp:directive.page language="java"
+                        session="true"
+                        isELIgnored="false"
+                        contentType="text/html; charset=ISO-8859-1"
+                        pageEncoding="ISO-8859-1"/>
+    <html>
+    <head><title>Application Input Page</title></head>
+    <body>
+    <h3>
+
+        <c:if test="${user!=null}">
+            <br/>User Name: <c:out value="${user.userName}"/>
+            <br/>User Pwd: <c:out value="${user.userPwd}"/>
+        </c:if>
+
+        <c:if test="${user==null}">
+            <c:out value="User Not Found"/>
+        </c:if>
+    </h3>
+    </body>
+    </html>
+</jsp:root>

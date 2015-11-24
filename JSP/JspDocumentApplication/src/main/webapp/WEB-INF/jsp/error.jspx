@@ -1,0 +1,31 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: Adarsh
+  Date: 11/27/12
+  Time: 9:28 AM
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          version="2.0">
+    <jsp:directive.page
+            autoFlush="true"
+            buffer="8kb"
+            isELIgnored="false"
+            contentType="text/html; charset=ISO-8859-1"
+            isThreadSafe="false"
+            language="java"
+            info="JSP XML TAG USED"
+            session="true"
+            pageEncoding="ISO-8859-1"
+            isErrorPage="true"/>
+
+    <html>
+    <head><title>Simple jspx page</title></head>
+    <body>
+    <br/>Exception: ${exception}
+    <br/> Message: ${exception.message}
+    <br/> StackTrace: ${exception.stackTrace}
+    </body>
+    </html>
+</jsp:root>

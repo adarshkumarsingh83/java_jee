@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>ELScopeApplication</display-name>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<context-param>
+	 <param-name>ServletContext</param-name>
+	 <param-value>Adarsh kumar singh</param-value>
+	</context-param>
+	
+	<servlet>
+		<display-name>MyServlet</display-name>
+		<servlet-name>MyServlet</servlet-name>
+		<servlet-class>com.adarsh.servlet.MyServlet</servlet-class>
+		<init-param>
+			<param-name>ServletConfig</param-name>
+			<param-value>Radha singh</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServlet</servlet-name>
+		<url-pattern>/myServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>		
+		<servlet-name>myjsp</servlet-name>
+		<jsp-file>/WEB-INF/jsp/MyJsp.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myjsp</servlet-name>
+		<url-pattern>/myJsp</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>

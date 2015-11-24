@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+          http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <display-name>HttpRequestWrapperResponseWrapper</display-name>
+
+    <filter>
+        <description>
+        </description>
+        <display-name>MyFilter</display-name>
+        <filter-name>MyFilter</filter-name>
+        <filter-class>com.adarsh.filter.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyFilter</filter-name>
+        <url-pattern>/myServlet</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+        <dispatcher>ERROR</dispatcher>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.adarsh.servlet.MyServlet</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Adarsh kumar</param-value>
+        </init-param>
+        <init-param>
+            <param-name>email</param-name>
+            <param-value>adarsh@radha.com</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/myServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

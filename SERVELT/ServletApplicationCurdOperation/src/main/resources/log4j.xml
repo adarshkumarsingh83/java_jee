@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!-- Appenders -->
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="target" value="System.out"/>
+        <param name="threshold" value="trace"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %d{dd-MMM-yy hh:mm:ss} %c{1}:%M:%L %m%n"/>
+        </layout>
+    </appender>
+
+
+    <appender name="LOGFILE" class="org.apache.log4j.RollingFileAppender">
+        <param name="maxFileSize" value="1024MB"/>
+        <param name="File" value="c:/app.log"/>
+        <param name="BufferedIO" value="true"/>
+        <param name="BufferSize" value="1024"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %d{dd-MMM-yy hh:mm:ss} %c:%M:%L %m%n"/>
+        </layout>
+    </appender>
+
+
+    <logger name="com.mysql">
+        <level value="DEBUG"/>
+    </logger>
+
+
+    <logger name="com.adarsh">
+        <level value="DEBUG"/>
+    </logger>
+
+
+    <!-- Root Logger -->
+    <root>
+        <level value="DEBUG"/>
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="LOGFILE"/>
+        <appender-ref ref="ServiceFileAppender"/>
+    </root>
+
+
+</log4j:configuration>

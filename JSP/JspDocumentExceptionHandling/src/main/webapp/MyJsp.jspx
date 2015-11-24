@@ -1,0 +1,30 @@
+<!--
+* @author Adarsh
+* @author $LastChangedBy: adarsh $
+* @version $Revision: 1595 $, $Date:: 5/4/12 6:12 PM#$
+-->
+
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          version="2.0">
+
+    <jsp:directive.page
+            language="java"
+            import="java.lang.Integer"
+            contentType="text/html; charset=ISO-8859-1"
+                        errorPage="error.jspx"
+                        pageEncoding="ISO-8859-1"/>
+
+    <jsp:declaration>
+        private int number1;
+        private int number2;
+    </jsp:declaration>
+    <jsp:body>
+        number1=Integer.parseInt(request.getParameter("number1"));
+        number2=Integer.parseInt(request.getParameter("number2"));
+    </jsp:body>
+    <jsp:expression>
+        number1/number2
+    </jsp:expression>
+    <jsp:forward page="/myServlet"/>
+</jsp:root>

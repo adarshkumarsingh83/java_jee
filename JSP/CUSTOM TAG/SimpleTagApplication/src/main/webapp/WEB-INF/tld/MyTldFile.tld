@@ -1,0 +1,20 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>getWishMsg</short-name>
+    <uri>http://adarsh.kumar.singh/demo</uri>
+    <display-name>Iterator Tag Example</display-name>
+    <description>Custom tag examples</description>
+   <tag>
+        <description>this is wish tag</description>
+        <name>getWish</name>           
+        <tag-class>com.adarsh.simpletag.MyWish</tag-class>
+        <!-- empty,scriptless,tagdependent or JSP -->
+        <body-content>empty</body-content>       
+        <attribute>
+            <name>userName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue> 
+        </attribute>          
+    </tag>
+</taglib>
