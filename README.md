@@ -10,3 +10,4 @@ JAVA ENTERPRISE EDITION APPLICATION REPOSITORY
 3.Servlet3AnnotationMultipleUrlExample <br/>
 4.Servlet3AnnotationContextListenerExample <br/>
 5.Servlet3AnnotationRequestListenerExample <br/>
+6.Servlet3AnnotationSessionListenerExample <br/>
