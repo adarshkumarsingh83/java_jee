@@ -22,3 +22,4 @@ JAVA ENTERPRISE EDITION APPLICATION REPOSITORY
 - Jdbc Mysql PreparedStatement Example
 - Jdbc Mysql Procedure Example
 - Jdbc Mysql Function Example
+- Jdbc Mysql JdbcDatabaseMetadata Example
