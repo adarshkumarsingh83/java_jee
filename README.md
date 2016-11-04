@@ -19,3 +19,5 @@ JAVA ENTERPRISE EDITION APPLICATION REPOSITORY
 **JDBC MYSQL**
 - Jdbc Mysql Create Database Example
 - Jdbc Mysql Statement Example
+- Jdbc Mysql PreparedStatement Example
+- Jdbc Mysql Procedure Example
