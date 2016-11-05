@@ -23,3 +23,6 @@ JAVA ENTERPRISE EDITION APPLICATION REPOSITORY
 - Jdbc Mysql Procedure Example
 - Jdbc Mysql Function Example
 - Jdbc Mysql JdbcDatabaseMetadata Example
+
+**JDBC ORACLE DATABASE**
+- Jdbc Oracle Statement Example 
