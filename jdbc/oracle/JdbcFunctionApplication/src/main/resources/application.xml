@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>database properties</comment>
+    <entry key="dataSource.driverClass">oracle.jdbc.driver.OracleDriver</entry>
+    <entry key="dataSource.url">jdbc:oracle:thin:@</entry>
+    <entry key="dataSource.hostname">127.0.0.1</entry>
+    <entry key="dataSource.portNumber">:1521</entry>
+    <entry key="dataSource.database">:XE</entry>
+    <entry key="dataSource.username">adarsh</entry>
+    <entry key="dataSource.password">adarsh</entry>
+
+    <entry key="sql.SelectEmployee">{ ? = call getEmpFunction(?,?)}</entry>
+    <entry key="sql.selectAllEmployee">{ ? = call getAllEmpFunction(?)}</entry>
+    <entry key="sql.InsertEmployee">{ ? = call insertEmpFunction(?,?,?)}</entry>
+    <entry key="sql.UpdateEmployee">{ ? = call updateEmpFunction(?,?,?)}</entry>
+    <entry key="sql.DeleteEmployee">{ ? = call deleteEmpFunction(?)}</entry>
+</properties>
