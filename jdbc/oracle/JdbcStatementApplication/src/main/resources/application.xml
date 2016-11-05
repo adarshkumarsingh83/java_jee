@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>database properties</comment>
+    <entry key="dataSource.driverClass">oracle.jdbc.driver.OracleDriver</entry>
+    <entry key="dataSource.url">jdbc:oracle:thin:@</entry>
+    <entry key="dataSource.hostname">127.0.0.1</entry>
+    <entry key="dataSource.portNumber">:1521</entry>
+    <entry key="dataSource.database">:XE</entry>
+    <entry key="dataSource.username">adarsh</entry>
+    <entry key="dataSource.password">adarsh</entry>
+
+    <entry key="sql.SelectAllEmployee">
+        SELECT EMPNO,EMPNAME,EMPEMAIL FROM EMPLOYEE
+    </entry>
+    <entry key="sql.SelectEmployee">
+        SELECT EMPNO,EMPNAME,EMPEMAIL FROM EMPLOYEE
+        WHERE EMPNO =@EMPNO
+    </entry>
+    <entry key="sql.UpdateEmployee">
+        UPDATE EMPLOYEE SET EMPNAME='@EMPNAME' ,EMPEMAIL='@EMPEMAIL'
+        WHERE EMPNO=@EMPNO
+    </entry>
+    <entry key="sql.InsertEmployee">
+        INSERT INTO EMPLOYEE(EMPNO,EMPNAME,EMPEMAIL)
+        VALUES(@EMPNO,'@EMPNAME','@EMPEMAIL')
+    </entry>
+    <entry key="sql.DeleteEmployee">
+        DELETE FROM EMPLOYEE
+        WHERE EMPNO=@EMPNO
+    </entry>
+</properties>
