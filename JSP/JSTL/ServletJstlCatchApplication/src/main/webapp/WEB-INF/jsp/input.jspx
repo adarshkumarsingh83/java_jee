@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+ * @author Adarsh
+ * @author $LastChangedBy: adarsh $
+ * @version $Revision: 1595 $, $Date:: 5/4/12 6:12 PM#$
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          version="2.0" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    <jsp:directive.page language="java"
+                        session="true"
+                        isELIgnored="false"
+                        contentType="text/html; charset=ISO-8859-1"
+                        pageEncoding="ISO-8859-1"/>
+    <html>
+    <head><title>Application Input Page</title></head>
+    <c:import url="header.jspx"/>
+    <body>
+    <c:choose>
+        <c:when test="${firstNumber!=null}">
+            <c:out value="${firstNumber}"/>
+        </c:when>
+        <c:when test="${secondNumber!=null}">
+            <c:out value="${secondNumber}"/>
+        </c:when>
+        <c:otherwise>
+            <c:out value="ENTER THE NUMBERE"/>
+        </c:otherwise>
+    </c:choose>
+
+    <form action="display.do" method="post">
+        <table>
+            <tr>
+                <td>Enter the First Number</td>
+
+                <td><input type="text" name="firstNumber"/></td>
+            </tr>
+            <tr>
+                <td>Enter the Second Number</td>
+
+                <td><input type="text" name="secondNumber"/></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="send" value="send"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    </body>
+    <c:import url="header.jspx"/>
+    </html>
+</jsp:root>

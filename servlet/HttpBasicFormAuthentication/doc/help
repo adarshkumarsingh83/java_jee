@@ -1,0 +1,12 @@
+ http://www.avajava.com/tutorials/lessons/how-do-i-use-form-authentication-with-tomcat.html?page=1
+
+ <Connector port="8080" maxHttpHeaderSize="8192"
+               maxThreads="150" minSpareThreads="25" maxSpareThreads="75"
+               enableLookups="false" redirectPort="4321" acceptCount="100"
+               connectionTimeout="20000" disableUploadTimeout="true" />
+
+    <Connector port="4321" maxHttpHeaderSize="8192"
+               maxThreads="150" minSpareThreads="25" maxSpareThreads="75"
+               enableLookups="false" disableUploadTimeout="true"
+               acceptCount="100" scheme="https" secure="true"
+               clientAuth="false" sslProtocol="TLS" />

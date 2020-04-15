@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource>
+
+    <request view="/WEB-INF/view">
+        <link>login.do</link>
+        <className>com.adarsh.web.manager.LoginManager</className>
+        <method>checkLogin</method>
+        <success>home.do</success>
+        <fail>login.do</fail>
+    </request>
+                                              `
+    <request view="/WEB-INF/view">
+        <link>home.do</link>
+        <className>com.adarsh.web.manager.LoginManager</className>
+        <method>showHome</method>
+        <success>sucess.do</success>
+        <fail>fail.do</fail>
+    </request>
+
+    <request view="/WEB-INF/view">
+        <link>adminHome.do</link>
+        <className>com.adarsh.web.manager.LoginManager</className>
+        <method>showHome</method>
+        <success>adminHome.do</success>
+        <fail>accessDenied.do</fail>
+    </request>
+
+    <request view="/WEB-INF/view">
+        <link>userHome.do</link>
+        <className>com.adarsh.web.manager.LoginManager</className>
+        <method>userHome</method>
+        <success>userHome.do</success>
+        <fail>accessDenied.do</fail>
+    </request>
+
+    <request view="/WEB-INF/view">
+        <link>visitor.do</link>
+        <className>com.adarsh.web.manager.LoginManager</className>
+        <method>visitorHome</method>
+        <success>visitor.do</success>
+        <fail>error.do</fail>
+    </request>
+
+</resource>

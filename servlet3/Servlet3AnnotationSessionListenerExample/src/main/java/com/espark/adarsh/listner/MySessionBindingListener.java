@@ -28,64 +28,33 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.espark.adarsh.servlet;
-
+package com.espark.adarsh.listner;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebInitParam;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.Date;
-
-@WebServlet(value = "/myServlet"
-        , name = "MyServlet"
-        , description = "My Annotation Servlet"
-        , displayName = "MyServlet"
-        , loadOnStartup = 1
-        , initParams = {
-        @WebInitParam(name = "param1", value = "value1"),
-        @WebInitParam(name = "param2", value = "value2")
-}
-)
+import javax.servlet.annotation.WebListener;
+import javax.servlet.http.HttpSessionBindingEvent;
+import javax.servlet.http.HttpSessionBindingListener;
 /**
  * @author Adarsh Kumar
  * @author $LastChangedBy: Adarsh Kumar$
  * @version $Revision: 0001 $, $Date:: 1/1/10 0:00 AM#$
  * @Espark @copyright all right reserve
  */
-public class MyServlet extends HttpServlet {
+@WebListener
+public class MySessionBindingListener implements HttpSessionBindingListener {
 
+    private static final Logger log = LoggerFactory.getLogger(MySessionBindingListener.class);
 
-    private static final Logger log = LoggerFactory.getLogger(MyServlet.class);
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        log.info("MyServlet doGet()");
-        doProcess(request, response);
+    public void valueBound(HttpSessionBindingEvent event) {
+        log.info("MySessionBindingListener valueBound");
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        log.info("MyServlet doPost()");
-        doProcess(request, response);
+    public void valueUnbound(HttpSessionBindingEvent event) {
+        log.info("MySessionBindingListener valueUnbound");
     }
-
-    private void doProcess(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-        request.getSession().removeAttribute("filterOneSession");
-
-        response.setContentType("text/plain");
-        response.getWriter().write(new Date().toString() + " Welcome to the application ");
-    }
-
 }
