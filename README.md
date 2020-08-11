@@ -46,25 +46,25 @@ JAVA ENTERPRISE EDITION APPLICATION REPOSITORY
 
 ### [JSP](https://github.com/adarshkumarsingh83/java_jee/tree/master/JSP)
 **CUSTOM TAG**
--- BodyTagApplication		
--- IterationTagApplication		
--- SimpleTagSupportApplication	
--- TagSupportApplicatiion
--- BodyTagSupportApplication	
--- SimpleTagApplication		
--- TagApplication		
+- BodyTagApplication		
+- IterationTagApplication		
+- SimpleTagSupportApplication	
+- TagSupportApplicatiion
+- BodyTagSupportApplication	
+- SimpleTagApplication		
+- TagApplication		
 
 **JSTL**
--- ServletJstlCatchApplication		
--- ServletJstlForEachMapApplication	
--- ServletJstlSqlTagBasic
--- ServletJstlChooseApplication		
--- ServletJstlForEachSetApplication
--- ServletJstlForEachListApplication	
--- ServletJstlIfApplication	
+- ServletJstlCatchApplication		
+- ServletJstlForEachMapApplication	
+- ServletJstlSqlTagBasic
+- ServletJstlChooseApplication		
+- ServletJstlForEachSetApplication
+- ServletJstlForEachListApplication	
+- ServletJstlIfApplication	
 **EXPRESSION LANG**
--- ELRepositoryApplication	
--- ELScopeApplication		
+- ELRepositoryApplication	
+- ELScopeApplication		
 - JspDocumentApplication		
 - JspDocumentUseBean		
 - JspPageUseBean
