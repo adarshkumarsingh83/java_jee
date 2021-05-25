@@ -1,4 +1,0 @@
-mvn clean package
-mvn jetty:run
-
-http://localhost:8080/Servlet3AnnotationRequestListenerExample/myServlet
