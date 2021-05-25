@@ -16,7 +16,7 @@ import java.util.Date;
 
 @WebServlet(urlPatterns ={ "/myServletMultipleUrl","*.do","/myServlet/myServlet"}
         ,name = "MyServlet"
-        ,description = "My Annotation Servelt"
+        ,description = "My Annotation Servlet"
         ,displayName = "MyServlet"
         , loadOnStartup = 1
         , initParams = {
