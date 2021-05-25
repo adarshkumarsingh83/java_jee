@@ -1,6 +1,0 @@
-mvn clean install
-mvn jetty:run
-
-http://localhost:8080/Servlet3AnnotationMultipleUrlExample/myServletMultipleUrl
-http://localhost:8080/Servlet3AnnotationMultipleUrlExample/espark.do
-http://localhost:8080/Servlet3AnnotationMultipleUrlExample/myServlet/myServlet
