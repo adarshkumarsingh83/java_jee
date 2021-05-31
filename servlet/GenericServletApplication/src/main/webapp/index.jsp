@@ -15,7 +15,7 @@
 <body>
 <form action="myGenericServlet">
     Enter the Name<input type="text" name="userName"/>
-    <br/><input type="submit" value="send data"/>
+    <br/>&nbsp;&nbsp;<input type="submit" value="send data"/>
 </form>
 </body>
 </html>
