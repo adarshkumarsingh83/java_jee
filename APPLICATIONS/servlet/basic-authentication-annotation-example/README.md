@@ -1,3 +1,11 @@
+# servlet3-basic-authentication-annotation-example
+
+---
+
+### To Build Code 
+* mvn clean package 
+* war file will be inside the servlet3-basic-authentication-annotation-example/target/servlet3-basic-authentication-annotation-example.war dir 
+
 ## To  Download tomcat 
 * https://tomcat.apache.org/index.html
 	* downloads -> version 
@@ -26,13 +34,10 @@
 * create a war file of the application and copy it in below location 
 * ~/TomcatXXX/webapps 
 
-
-
 ### for starting and stopping  
 * unzip the file and go to the  ~/TomcatXXX/bin
 * for start $ sh startup.sh 
 * for stopping $  sh shutdown.sh
-
 
 
 ### to view the application on tomacat 

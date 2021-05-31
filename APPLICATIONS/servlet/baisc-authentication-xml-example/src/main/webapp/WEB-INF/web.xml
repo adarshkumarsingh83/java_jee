@@ -1,0 +1,51 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+    <servlet>
+        <servlet-name>secured-servlet</servlet-name>
+        <servlet-class>com.espark.adarsh.SecuredServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>secured-servlet</servlet-name>
+        <url-pattern>/secured</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>public-servlet</servlet-name>
+        <servlet-class>com.espark.adarsh.PublicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>public-servlet</servlet-name>
+        <url-pattern>/un-secured</url-pattern>
+    </servlet-mapping>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>secured-url</web-resource-name>
+            <url-pattern>/secured/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>secured</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>default</realm-name>
+    </login-config>
+
+    <security-role>
+        <role-name>secured</role-name>
+    </security-role>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <display-name>basic-authentication-xml-example</display-name>
+
+</web-app>
