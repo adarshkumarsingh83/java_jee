@@ -99,6 +99,8 @@ The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS
 
 ````
 
+![img](image/tomcat-config.png)
+
 # Start Apache Tomcat.
 * $ /Users/tomcat/bin/shutdown.sh
 * $ /Users/tomcat/bin/startup.sh
