@@ -22,11 +22,12 @@
 
 
 ```
+ <role rolename="manager-gui"/>
   <role rolename="tomcat"/>
   <role rolename="admin"/>
   <role rolename="user"/>
-  <user username="tomcat" password="tomcat" roles="tomcat"/>
-  <user username="user" password="user" roles="user"/>
+  <user username="tomcat" password="tomcat" roles="tomcat,manager-gui"/>
+  <user username="user" password="user" roles="tomcat,admin"/>
   <user username="admin" password="admin" roles="admin"/>
 
 ```

@@ -29,7 +29,7 @@
             <http-method>POST</http-method>
         </web-resource-collection>
         <auth-constraint>
-            <role-name>secured</role-name>
+            <role-name>admin</role-name>
         </auth-constraint>
     </security-constraint>
 
@@ -39,7 +39,7 @@
     </login-config>
 
     <security-role>
-        <role-name>secured</role-name>
+        <role-name>admin</role-name>
     </security-role>
 
     <welcome-file-list>

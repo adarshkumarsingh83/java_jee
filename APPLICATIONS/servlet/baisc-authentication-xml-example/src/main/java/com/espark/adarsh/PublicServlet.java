@@ -9,7 +9,8 @@ import java.io.PrintWriter;
 
 public class PublicServlet extends HttpServlet{
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    @Override
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         out.write("Servlet basic authentication xml configuration: public servlet");
     }
