@@ -6,11 +6,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
+
 /*
-* @author Adarsh
-* @author $LastChangedBy: adarsh $
-* @version $Revision: 1595 $, $Date:: 5/4/12 6:12 PM#$
-*/
+ * @author Adarsh
+ * @author $LastChangedBy: adarsh $
+ * @version $Revision: 1595 $, $Date:: 5/4/12 6:12 PM#$
+ */
 public class MyServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
