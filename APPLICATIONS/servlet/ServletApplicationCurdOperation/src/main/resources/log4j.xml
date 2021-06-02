@@ -13,7 +13,7 @@
 
     <appender name="LOGFILE" class="org.apache.log4j.RollingFileAppender">
         <param name="maxFileSize" value="1024MB"/>
-        <param name="File" value="c:/app.log"/>
+        <param name="File" value="app.log"/>
         <param name="BufferedIO" value="true"/>
         <param name="BufferSize" value="1024"/>
         <layout class="org.apache.log4j.PatternLayout">
