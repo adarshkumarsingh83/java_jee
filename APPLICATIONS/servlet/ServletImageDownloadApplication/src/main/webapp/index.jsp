@@ -11,7 +11,7 @@
     <title></title>
 </head>
 <body>
-      <a href="/jsp/ImageDownload.jsp">ImageDownload</a>
-      <a href="/jsp/ImageUpLoad.jsp">ImageUpLoad</a>
+      <a href="jsp/ImageDownload.jsp">ImageDownload</a>
+      <a href="jsp/ImageUpLoad.jsp">ImageUpLoad</a>
 </body>
 </html>
