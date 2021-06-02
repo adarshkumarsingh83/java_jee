@@ -13,8 +13,8 @@
 </head>
 <body>
 <form action="myServlet">
-    Enter the Name<input type="text" name="userName"/>
-    <br/><input type="submit" value="send data"/>
+    Enter the Name &nbsp;<input type="text" name="userName"/>
+    <br/> <input type="submit" value="send data"/>
 </form>
 </body>
 </html>
