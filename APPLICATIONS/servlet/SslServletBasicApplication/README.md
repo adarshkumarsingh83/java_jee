@@ -8,18 +8,15 @@
 
 
 ### Application Url 			
-* https://localhost:8443/applicationContext
+* https://localhost:8443/SslServletBasicApplication
 ---
 
 
 # To Enable SSL 
+[Click to view step by step help for ssl configuration ](DOCUMENTS/TOMCAT_README.md)
 
-## ON Mac 
-
-
-## ON Windows 
 ```
-c:\adarsh>keytool -genkeypair -alias <MyCert> -keyalg <RSA> -keystore <"c:\MyCert.cert">
+$ keytool -genkeypair -alias <MyCert> -keyalg <RSA> -keystore <"Usrs\MyCert.cert">
 
 
  <Connector port="8443" 
@@ -30,8 +27,6 @@ c:\adarsh>keytool -genkeypair -alias <MyCert> -keyalg <RSA> -keystore <"c:\MyCer
 			secure="true"
             clientAuth="false" 
 			sslProtocol="TLS" 
-			keystoreFile="C://MyCert.cert"
-			keystorePass="adarsh" />
 
 		
 web.xml insede web app tag
@@ -53,23 +48,3 @@ web.xml insede web app tag
 		.................
 </web-app>
 ```
-![img](help/1-image.png)
-![img](help/2-image.png)
-![img](help/3-image.png)
-![img](help/4-image.png)
-![img](help/5-image.png)
-![img](help/6-image.png)
-![img](help/7-a-image.png)
-![img](help/7-b-image.png)
-![img](help/8-image.png)
-![img](help/9-image.png)
-![img](help/10-image.png)
-![img](help/11-image.png)
-![img](help/12-image.png)
-![img](help/13-image.png)
-![img](help/14-image.png)
-![img](help/15-image.png)
-![img](help/16-image.png)
-![img](help/17-image.png)
-![img](help/18-image.png)
-![img](help/19-image.png)
