@@ -10,7 +10,7 @@
 </head>
 <body>
       <form name="myForm" action="myServlet" onsubmit="return validate(this)">      
-         <input type="text" name="userName"/>
+         <h3> Enter the Message :->   &nbsp;<input type="text" name="userName"/> </h3>
          <input type="submit" value="send" />
       </form>
 </body>
