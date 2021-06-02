@@ -8,7 +8,7 @@
 
 
 ### Url 
-* http://localhost:8080/
+* https://localhost:8443/HttpBasicFormAuthentication/myServlet.do
 ---
 
 
@@ -49,3 +49,8 @@
 ### to view the application on tomacat 
 * http://localhost:8080/manager/html
 * provide tomcat/tomcat 
+
+---
+### Port 8443 must be configured for this 
+
+*   [Click to view the step by step guide ](/DOCUMENTS/TOMCAT_README.md)
