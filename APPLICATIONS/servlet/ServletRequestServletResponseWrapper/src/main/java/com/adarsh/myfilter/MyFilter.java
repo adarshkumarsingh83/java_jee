@@ -4,6 +4,7 @@ import com.adarsh.wrapper.request.MyRequestWrapper;
 import com.adarsh.wrapper.response.MyResponseWrapper;
 
 import javax.servlet.*;
+import javax.servlet.http.HttpServletRequestWrapper;
 import java.io.IOException;
 
 import static java.lang.System.out;
